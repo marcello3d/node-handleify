@@ -1,6 +1,6 @@
 {
     "name": "handleify",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "browserify 2 + precompiled client-side handlebars",
     "main": "index.js",
     "scripts": {
@@ -17,6 +17,7 @@
     "devDependencies": {
         "mocha": "1.8.1"
     },
+    "browser": "runtime.js",
     "keywords": [
         "handlebars",
         "hbs",

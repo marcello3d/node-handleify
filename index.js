@@ -11,7 +11,7 @@ module.exports = function(file) {
         },
         function end() {
             try {
-                this.queue('module.exports=require("handleify/runtime")('+handlebars.precompile(source)+')')
+                this.queue('module.exports=require("handleify").template('+handlebars.precompile(source)+')')
                 this.queue(null)
             } catch (ex) {
                 stream.emit('error', ex)
