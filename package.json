@@ -1,0 +1,28 @@
+{
+    "name": "handleify",
+    "version": "0.1.0",
+    "description": "browserify 2 + precompiled client-side handlebars",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/marcello3d/node-handleify.git"
+    },
+    "dependencies": {
+        "through": "2.2.1",
+        "handlebars": "1.0.10"
+    },
+    "devDependencies": {
+        "mocha": "1.8.1"
+    },
+    "keywords": [
+        "handlebars",
+        "hbs",
+        "browserify"
+    ],
+    "author": "Marcello Bastéa-Forte <marcello@cellosoft.com>",
+    "license": "zlib",
+    "readmeFilename": "Readme.md"
+}
