@@ -22,7 +22,7 @@ function getTransformedOutput(filename, callback) {
 test('test.hbs', function(done) {
     getTransformedOutput(__dirname+"/test.hbs", function(error, output) {
         assert.ifError(error)
-        assert.equal(output, 'module.exports=function (Handlebars,depth0,helpers,partials,data) {\n' +
+        assert.equal(output, 'module.exports=require("handleify/runtime")(function (Handlebars,depth0,helpers,partials,data) {\n' +
             '  this.compilerInfo = [2,\'>= 1.0.0-rc.3\'];\n' +
             'helpers = helpers || Handlebars.helpers; data = data || {};\n' +
             '  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;\n\n\n' +
@@ -32,7 +32,7 @@ test('test.hbs', function(done) {
             '  buffer += escapeExpression(stack1)\n' +
             '    + "!";\n' +
             '  return buffer;\n' +
-            '  }')
+            '  })')
         done()
     })
 })
