@@ -23,8 +23,8 @@ test('test.hbs', function(done) {
     getTransformedOutput(__dirname+"/test.hbs", function(error, output) {
         assert.ifError(error)
         assert.equal(output, 'module.exports=require("handleify").template(function (Handlebars,depth0,helpers,partials,data) {\n' +
-            '  this.compilerInfo = [2,\'>= 1.0.0-rc.3\'];\n' +
-            'helpers = helpers || Handlebars.helpers; data = data || {};\n' +
+            '  this.compilerInfo = [4,\'>= 1.0.0\'];\n' +
+            'helpers = this.merge(helpers, Handlebars.helpers); data = data || {};\n' +
             '  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;\n\n\n' +
             '  buffer += "Hello ";\n' +
             '  if (stack1 = helpers.world) { stack1 = stack1.call(depth0, {hash:{},data:data}); }\n' +
