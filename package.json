@@ -11,11 +11,11 @@
         "url": "git://github.com/marcello3d/node-handleify.git"
     },
     "dependencies": {
-        "through": "2.2.1",
+        "through": "2.3.4",
         "handlebars": "1.0.12"
     },
     "devDependencies": {
-        "mocha": "1.8.1"
+        "mocha": "1.11.0"
     },
     "browser": "runtime.js",
     "keywords": [
