@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "through": "2.2.1",
-        "handlebars": "1.0.10"
+        "handlebars": "1.0.12"
     },
     "devDependencies": {
         "mocha": "1.8.1"
