@@ -1,6 +1,6 @@
 {
     "name": "handleify",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "browserify 2 + precompiled client-side handlebars",
     "main": "index.js",
     "scripts": {
